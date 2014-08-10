@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @borg_cube.name %>
+</p>
+
+<p>
+  <strong>Hp:</strong>
+  <%= @borg_cube.hp %>
+</p>
+
+<p>
+  <strong>X:</strong>
+  <%= @borg_cube.x %>
+</p>
+
+<p>
+  <strong>Y:</strong>
+  <%= @borg_cube.y %>
+</p>
+
+<p>
+  <strong>Sleeping borg:</strong>
+  <%= @borg_cube.sleeping_borg %>
+</p>
+
+<p>
+  <strong>Waking borg:</strong>
+  <%= @borg_cube.waking_borg %>
+</p>
+
+<%= link_to 'Edit', edit_borg_cube_path(@borg_cube) %> |
+<%= link_to 'Back', borg_cubes_path %>

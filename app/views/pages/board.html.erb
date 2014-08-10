@@ -1,0 +1,15 @@
+<h1>Borg Board!</h1>
+
+<div class="board">
+  <% 10.times do |y| %>
+    <% 10.times do |x| %>
+      <% if BorgCube.borg_in_space?(x, y) %>
+        <div id="c<%=y%>r<%=x%>" class="borg-unit"> x </div> 
+      <% else %>
+        <div id="c<%=y%>r<%=x%>" class="empty-place">   </div> 
+      <% end %>
+    <% end %>
+    <div class="clear"></div>
+  <% end %>
+</div>
+

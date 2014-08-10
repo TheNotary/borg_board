@@ -11,3 +11,34 @@
  *= require_self
  *= require_tree .
  */
+
+
+body{
+  background: black;
+}
+
+.board div{
+  width: 20px;
+  height: 20px;
+  text-align:center;
+  border:solid;
+}
+
+.empty-place{
+  background-color:#333;
+  float:left;
+}
+
+.borg-unit{
+  background-color:#f22;
+  float:left;
+}
+
+div.clear{
+  clear:both;
+  height:0;
+  width: 0;
+  border:none;
+}
+
+

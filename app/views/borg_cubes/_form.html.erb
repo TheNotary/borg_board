@@ -1,0 +1,41 @@
+<%= form_for(@borg_cube) do |f| %>
+  <% if @borg_cube.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@borg_cube.errors.count, "error") %> prohibited this borg_cube from being saved:</h2>
+
+      <ul>
+      <% @borg_cube.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :hp %><br>
+    <%= f.number_field :hp %>
+  </div>
+  <div class="field">
+    <%= f.label :x %><br>
+    <%= f.number_field :x %>
+  </div>
+  <div class="field">
+    <%= f.label :y %><br>
+    <%= f.number_field :y %>
+  </div>
+  <div class="field">
+    <%= f.label :sleeping_borg %><br>
+    <%= f.number_field :sleeping_borg %>
+  </div>
+  <div class="field">
+    <%= f.label :waking_borg %><br>
+    <%= f.number_field :waking_borg %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

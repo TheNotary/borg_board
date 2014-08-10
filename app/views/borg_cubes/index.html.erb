@@ -1,0 +1,37 @@
+<h1>Listing Borg Cubes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Hp</th>
+      <th>X</th>
+      <th>Y</th>
+      <th>Sleeping borg</th>
+      <th>Waking borg</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @borg_cubes.each do |borg_cube| %>
+      <tr>
+        <td><%= borg_cube.name %></td>
+        <td><%= borg_cube.hp %></td>
+        <td><%= borg_cube.x %></td>
+        <td><%= borg_cube.y %></td>
+        <td><%= borg_cube.sleeping_borg %></td>
+        <td><%= borg_cube.waking_borg %></td>
+        <td><%= link_to 'Show', borg_cube %></td>
+        <td><%= link_to 'Edit', edit_borg_cube_path(borg_cube) %></td>
+        <td><%= link_to 'Destroy', borg_cube, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Borg cube', new_borg_cube_path %>
