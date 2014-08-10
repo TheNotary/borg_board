@@ -1,6 +1,6 @@
 == README
 
-This is the outcome of a hello world talk I gave a few seconds ago.  Didn't get to...
+This is the outcome of a rails hello world talk I gave a few seconds ago while waiting for dinner.  I didn't get to...
 
 
 * Models...
@@ -12,7 +12,7 @@ This is the outcome of a hello world talk I gave a few seconds ago.  Didn't get 
 * rails generate controller pages my_page
 
 
-But did cover
+But I did cover
 
 *  railse console
 
